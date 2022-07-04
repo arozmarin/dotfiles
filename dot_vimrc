@@ -1,0 +1,115 @@
+" word highlighting
+syntax on
+
+" Enable mouse
+set mouse=a
+
+" Set Line number
+set relativenumber
+set number
+
+" Status bar and ruler
+set showtabline=2
+set laststatus=2
+set ruler
+
+" Higlight search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Clear highlighting on escape in normal mode
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
+
+" copy to clipboard
+set clipboard=unnamed
+
+" keep pages in buffer
+set hidden
+
+" set tab key
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set nowrap
+
+" Set scrool to sotp 8 line befor top or bottom
+set scrolloff=8
+
+" Undo and redo keep after you alredy closed vim
+set undodir=~/.vimundo
+set undofile
+set undolevels=100
+
+" Automatically wrap text that extend beyond the screen length
+set wrap
+
+" Enable autocompletion, activate with ctrl+n
+set wildmode=longest,list,full
+set backspace=indent,eol,start
+set autoindent
+set signcolumn=yes
+
+
+" Show cursor line
+set cursorline
+
+"Vim plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'voldikss/vim-floaterm'
+Plug 'tpope/vim-commentary'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'morhetz/gruvbox'
+Plug 'flw-cn/vim-nerdtree-l-open-h-close'
+
+call plug#end()
+
+" Gruvbox theme
+set t_Co=256
+colorscheme gruvbox
+
+
+" Coomenting
+autocmd FileType apache setlocal commentstring=#\ %s
+
+" Lightline configuretion
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+
+" FZF configuration
+let g:fzf_preview_window = 'right:50%'
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  } }
+
+" Run NertTree
+map <F5> :NERDTreeToggle<CR>
+autocmd VimEnter * call NERDTreeAddKeyMap({ 'key': '<2-LeftMouse>', 'scope': "FileNode", 'callback': "OpenInTab", 'override':1 })
+    function! OpenInTab(node)
+        call a:node.activate({'reuse': 'all', 'where': 't'})
+    endfunction
+
+" Open and close folder with let and right arrow in NerdTree >> Need vim-nerdtree-l-open-h-close plugin
+autocmd FileType nerdtree nmap <buffer> <left> h
+autocmd FileType nerdtree nmap <buffer> <right> l
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" Icons in Neert three and show hidden files
+let NERDTreeShowHidden=1
+let NERDTreeMapOpenInTab='<ENTER>'
+set encoding=UTF-8
+
+" Run Termina
+let g:floaterm_keymap_toggle = '<F6>'
+
+" Clear unwanted white space
+autocmd BufWritePre * :%s/\s\+$//e
