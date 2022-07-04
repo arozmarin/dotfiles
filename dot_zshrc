@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(	
+plugins=(
 	my_settings
 	aliases
 	colorize
@@ -88,16 +88,17 @@ plugins=(
 	fzf
 	git
 	k
-	history-substring-search
+#	history-substring-search
 	tmux
 	tmux-cssh
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	you-should-use
+	zsh-history-substring-search
+    you-should-use
 	zsh-vi-mode
 	)
 
-    	
+
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 # User configuration
