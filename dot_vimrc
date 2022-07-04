@@ -113,3 +113,7 @@ let g:floaterm_keymap_toggle = '<F6>'
 
 " Clear unwanted white space
 autocmd BufWritePre * :%s/\s\+$//e
+
+"run chezmoi apply whenever you save a dotfile
+autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
+
