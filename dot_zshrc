@@ -128,6 +128,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Infinite History
 HISTFILE=~/.zsh_history
+HH_CONFIG=hicolor
 HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
 setopt HIST_IGNORE_ALL_DUPS  	# Never add duplicate entries.
 setopt appendhistory		# Append history
