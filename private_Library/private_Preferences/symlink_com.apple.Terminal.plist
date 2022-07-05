@@ -1,1 +1,1 @@
-{{ .chezmoi.sourceDir }}/com.apple.Terminal.plist
+~/.local/share/chezmoi/com.apple.Terminal.plist

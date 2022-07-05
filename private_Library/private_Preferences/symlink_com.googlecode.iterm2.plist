@@ -1,1 +1,1 @@
-{{ .chezmoi.sourceDir }}/com.googlecode.iterm2.plist
+~/.local/share/chezmoi/com.googlecode.iterm2.plist
