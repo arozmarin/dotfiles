@@ -83,7 +83,6 @@ plugins=(
 	my_settings
 	aliases
 	colorize
-#	colorize-master
 	history-search-multi-word
 	fzf
 	git
