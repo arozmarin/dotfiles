@@ -83,15 +83,15 @@ plugins=(
 	aliases
 	colorize
 	history-search-multi-word
+	zsh-history-substring-search
 	fzf
 	git
 	tmux
 	tmux-cssh
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	zsh-history-substring-search
     you-should-use
-	zsh-vi-mode
+	# zsh-vi-mode
 	)
 
 
@@ -127,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Infinite History
-HISTFILE=.zsh_history
+HISTFILE=~/.zsh_history
 HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
 setopt HIST_IGNORE_ALL_DUPS  	# Never add duplicate entries.
 setopt appendhistory		# Append history
