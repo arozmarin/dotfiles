@@ -89,9 +89,9 @@ plugins=(
 	tmux
 	tmux-cssh
 	zsh-autosuggestions
-	zsh-syntax-highlighting
+    zsh-syntax-highlighting
     you-should-use
-	# zsh-vi-mode
+	zsh-vi-mode
 	)
 
 
