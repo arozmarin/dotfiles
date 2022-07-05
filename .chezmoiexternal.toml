@@ -31,4 +31,9 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-
+ [".oh-my-zsh/custom/plugins/colorize"]
+    type = "archive"
+    url = "https://github.com/zpm-zsh/colorize/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
