@@ -87,8 +87,6 @@ plugins=(
 	history-search-multi-word
 	fzf
 	git
-	k
-#	history-substring-search
 	tmux
 	tmux-cssh
 	zsh-autosuggestions
