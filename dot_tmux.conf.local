@@ -70,23 +70,23 @@ tmux_conf_24b_colour=auto
 # tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 # Gruvbox theme
-tmux_conf_theme_colour_1="#3c3836"    # Gruvbox color237
-tmux_conf_theme_colour_2="#3c3836"    # Gruvbox color237
-tmux_conf_theme_colour_3="#98971a"    # Grivbox color106
-tmux_conf_theme_colour_4="#fabd2f"    # Gruvbox color214
-tmux_conf_theme_colour_5="#fe8019"    # Gruvbox color208
-tmux_conf_theme_colour_6="#3c3836"    # Gruvbox color237
-tmux_conf_theme_colour_7="#ebdbb2"    # Gruvbox color223
-tmux_conf_theme_colour_8="#cc241d"    # Gruvbox color124
-tmux_conf_theme_colour_9="#b8bb26"    # Gruvbox color142
-tmux_conf_theme_colour_10="#928374"   # Gruvbox color245
-tmux_conf_theme_colour_11="#3c3836"   # Gruvbox color237
-tmux_conf_theme_colour_12="#fbf1c7"   # Gruvbox color229
-tmux_conf_theme_colour_13="#3c3836"   # Gruvbox color237
-tmux_conf_theme_colour_14="#3c3836"   # Gruvbox color237
-tmux_conf_theme_colour_15="#3c3836"   # Gruvbox color237
-tmux_conf_theme_colour_16="#928374"   # Gruvbox color245
-tmux_conf_theme_colour_17="#fbf1c7"   # Gruvbox color229
+tmux_conf_theme_colour_1=colour237
+tmux_conf_theme_colour_2=colour237
+tmux_conf_theme_colour_3=colour106
+tmux_conf_theme_colour_4=colour214
+tmux_conf_theme_colour_5=colour172
+tmux_conf_theme_colour_6=colour237
+tmux_conf_theme_colour_7=colour223
+tmux_conf_theme_colour_8=colour124
+tmux_conf_theme_colour_9=colour142
+tmux_conf_theme_colour_10=colour245
+tmux_conf_theme_colour_11=colour237
+tmux_conf_theme_colour_12=colour245
+tmux_conf_theme_colour_13=colour248
+tmux_conf_theme_colour_14=colour237
+tmux_conf_theme_colour_15=colour237
+tmux_conf_theme_colour_16=colour239
+tmux_conf_theme_colour_17=colour248
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
