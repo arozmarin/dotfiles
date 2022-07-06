@@ -131,7 +131,7 @@ endfunction
 
 function! LightLineMode()
   let fname = expand('%:t')
-  return fname == '__Tagbar__' ? 'Tagbar' :
+  return fname =~# '^__Tagbar__' ? 'Tagbar' :
     \ fname == '__Mundo__' ? 'Mundo' :
     \ fname == '__Mundo_Preview__' ? 'Mundo Preview' :
     \ fname =~ 'NERD_tree' ? 'NERDTree' :
