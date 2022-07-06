@@ -82,25 +82,6 @@ colorscheme gruvbox
 autocmd FileType apache setlocal commentstring=#\ %s
 
 " Lightline configuretion
-function! LightLineFilename()
-  return expand('%:f')
-endfunction
-function! LightLineReadonly()
-  return &readonly ? '' : ''
-endfunction
-
-function! LightLineFugitive()
-  if exists('*fugitive#head')
-    let branch = fugitive#head()
-    return branch !=# '' ? ' '.branch : ''
-  endif
-  return ''
-endfunction
-
-function! LightLineModified()
-  return &ft =~ 'help' ? '' : &modified ? '' : &modifiable ? '' : '-'
-endfunction
-
 
 function! LightLineReadonly()
   return &readonly ? '' : ''
