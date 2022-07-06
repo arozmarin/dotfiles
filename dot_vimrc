@@ -117,11 +117,12 @@ function! LightLineFname()
   if filename == ''
       return ''
   endif
-  return join([filename, icon, modified],'')
+  return join([ filename, icon, modified],'')
 endfunction
 function! LightLineFilename()
   let readonly = LightLineReadonly()
-  return ('' != readonly ? readonly . ' ' : '') .
+  return expand('%:t') =~# '__Tagbar__\|__Mundo__\|__Mundo_Preview__\|NERD_tree' ? '' :
+    \ ('' != readonly ? readonly . ' ' : '') .
     \ ('' != expand('%:t') ? expand('%:t') : '')
 endfunction
 function! ModifiedStatus()
