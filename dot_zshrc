@@ -154,6 +154,9 @@ alias mc="mc --nosubshell" #fix slow start of midnight commander with Oh my ZSH
 # Cat on wings
 alias cat='bat --paging=never'
 
+# Attaches tmux to the last session; creates a new session if none exists.
+alias t='tmux attach || tmux new-session'
+
 bindkey -v
 #zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
