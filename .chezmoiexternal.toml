@@ -59,3 +59,7 @@
     type = "git-repo"
     url = "https://github.com/gpakosz/.tmux.git"
     refreshPeriod = "168h"
+[".hammerspoon/stackline"]
+    type = "git-repo"
+    url = "https://github.com/AdamWagner/stackline.git"
+    refreshPeriod = "168h"
