@@ -82,7 +82,24 @@ colorscheme gruvbox
 autocmd FileType apache setlocal commentstring=#\ %s
 
 " Lightline configuretion
-let g:lightline = {}
+let g:lightline = {
+          \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'filename', 'ctrlpmark' ] ]
+      \ },
+      \ 'component': {
+      \   'lineinfo': ' %3l:%-2v',
+      \ },
+      \ 'component_function': {
+      \   'fugitive': 'LightLineFugitive',
+      \   'readonly': 'LightLineReadonly',
+      \   'modified': 'LightLineModified',
+      \   'filename': 'LightLineFilename',
+      \   'ctrlpmark': 'CtrlPMark',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \  }
 let g:lightline.colorscheme = 'gruvbox'
 
 " FZF configuration
