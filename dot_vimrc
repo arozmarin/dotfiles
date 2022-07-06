@@ -83,7 +83,7 @@ autocmd FileType apache setlocal commentstring=#\ %s
 
 " Lightline configuretion
 let g:lightline = {
-          \ 'active': {
+      \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'filename', 'ctrlpmark' ] ]
       \ },
