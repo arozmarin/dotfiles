@@ -142,6 +142,11 @@ function! LightLineMode()
     \ winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
+function! LightlineTabFiletypeIcon(n)
+  let fticon = WebDevIconsGetFileTypeSymbol()
+  return fticon !=# '' ? fticon : ''
+endfunction
+
 let g:lightline = {
   \ 'colorscheme': 'gruvbox',
   \ 'active': {
@@ -187,12 +192,15 @@ let g:lightline = {
   \   'left': '',
   \   'right': ''
   \ },
+  \ 'tab_component_function': {
+  \   'fticon': 'LightlineTabFiletypeIcon',
+  \ },
   \ 'tabline': {
   \   'left': [['tabs']],
   \   'right': [],
   \ },
   \ 'tab': {
-  \   'active': ['filename'],
+  \   'active': ['filename', 'fticon'],
   \   'inactive': ['tabnum', 'filename'],
   \ },
   \ }
