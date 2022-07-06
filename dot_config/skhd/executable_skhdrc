@@ -108,7 +108,7 @@ ctrl + alt + cmd + lshift - s : window=$(yabai -m query --windows --window | jq 
 ################################################################
 
 ## float / unfloat window and center on screen
-#alt - t : yabai -m window --toggle float;\
+hyper - t : yabai -m window --toggle float;\
 #yabai -m window --grid 4:4:1:1:2:2 ## toggle sticky alt - s : yabai -m window --toggle sticky ## toggle sticky, float and resize to picture-in-picture size alt - p : yabai -m window --toggle sticky;\ yabai -m window --grid 5:5:4:0:1:1 ## change layout of desktop ctrl + alt - a : yabai -m space --layout bsp ctrl + alt - d : yabai -m space --layout float
 
 ## toggle window split type
