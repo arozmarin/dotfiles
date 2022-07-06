@@ -170,12 +170,14 @@ let g:lightline = {
   \   'linter_warnings': 'lightline#ale#warnings',
   \   'linter_errors': 'lightline#ale#errors',
   \   'linter_ok': 'lightline#ale#ok',
+  \   'tabs': 'lightline#tabs',
   \ },
   \ 'component_type': {
   \   'linter_checking': 'left',
   \   'linter_warnings': 'warning',
   \   'linter_errors': 'error',
-  \   'linter_ok': 'raw'
+  \   'linter_ok': 'raw',
+  \   'tabs': 'tabsel',
   \ },
   \ 'separator': {
   \   'left': '',
@@ -184,7 +186,7 @@ let g:lightline = {
   \ 'subseparator': {
   \   'left': '',
   \   'right': ''
-  \ }
+  \ },
   \ 'tabline': {
   \   'left': [['tabs']],
   \   'right': [],
@@ -193,10 +195,6 @@ let g:lightline = {
   \   'active': ['filename'],
   \   'inactive': ['tabnum', 'filename'],
   \ },
-  \ 'component_expand': {
-  \   'tabs': 'lightline#tabs',
-  \ 'component_type': {
-  \   'tabs': 'tabsel',
   \ }
 
 let g:lightline#ale#indicator_checking = "\uf110 "
