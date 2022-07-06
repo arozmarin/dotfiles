@@ -55,9 +55,7 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-[".tmux/.tmux.conf"]
+[".tmux"]
     type = "git-repo"
     url = "https://github.com/gpakosz/.tmux.git"
-    exact = true
-    stripComponents = 1
     refreshPeriod = "168h"
