@@ -175,14 +175,12 @@ let g:lightline = {
   \   'linter_warnings': 'lightline#ale#warnings',
   \   'linter_errors': 'lightline#ale#errors',
   \   'linter_ok': 'lightline#ale#ok',
-  \   'tabs': 'lightline#tabs',
   \ },
   \ 'component_type': {
   \   'linter_checking': 'left',
   \   'linter_warnings': 'warning',
   \   'linter_errors': 'error',
   \   'linter_ok': 'raw',
-  \   'tabs': 'tabsel',
   \ },
   \ 'separator': {
   \   'left': '',
@@ -194,10 +192,6 @@ let g:lightline = {
   \ },
   \ 'tab_component_function': {
   \   'fticon': 'LightlineTabFiletypeIcon',
-  \ },
-  \ 'tabline': {
-  \   'left': [['tabs']],
-  \   'right': [],
   \ },
   \ 'tab': {
   \   'active': ['filename', 'fticon'],
