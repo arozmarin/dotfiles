@@ -65,7 +65,7 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-[".local/share/mc/skins"]
+[".local/share/mc/skins/gruvbox256.ini"]
     type = "file"
-    url = "https://github.com/DmitriyMaksimovich/MidnightCommander-grovbox-port/blob/master/gruvbox256.ini"
+    url = "https://raw.githubusercontent.com/DmitriyMaksimovich/MidnightCommander-grovbox-port/master/gruvbox256.ini"
     refreshPeriod = "168h"
