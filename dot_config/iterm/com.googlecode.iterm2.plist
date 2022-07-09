@@ -597,6 +597,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Badge Text</key>
+			<string></string>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -1114,6 +1116,8 @@
 	</dict>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>URLHandlersByGuid</key>
+	<dict/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 </dict>

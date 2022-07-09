@@ -67,5 +67,6 @@
     refreshPeriod = "168h"
 [".local/share/mc/skins/gruvbox256.ini"]
     type = "file"
-    url = "https://raw.githubusercontent.com/DmitriyMaksimovich/MidnightCommander-grovbox-port/master/gruvbox256.ini"
+#    url = "https://raw.githubusercontent.com/DmitriyMaksimovich/MidnightCommander-grovbox-port/master/gruvbox256.ini"
+    url = "https://raw.githubusercontent.com/gruvbox-community/gruvbox-contrib/master/midnightcommander/gruvbox256.ini"
     refreshPeriod = "168h"
