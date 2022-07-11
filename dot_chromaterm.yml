@@ -1,0 +1,200 @@
+rules:
+- description: Special_Cases_That_Had_To_Be_ReOrderd
+  regex: .*'.*
+  color: f#006a61bf
+
+- description: on-fail.*
+  regex: on-fail.*
+  color: f#006a61bf
+
+- description: In_Enable_Mode
+  regex: (^\w[^>]*#|hostname)
+  color: f#00DF3A
+
+- description: NOT_In_Enable_mode
+  regex: ^\w[^#]*>
+  color: f#00c1a181
+
+- description: Interfaces1
+  regex: Embedded-Service-Engine\d\/\d
+  color: f#00c1a181
+
+- description: Interfaces2
+  regex: .*thernet[0-9]+(?:[\/\.:][0-9]+)+[,:]?(?:\x20|$)
+  color: f#00c1a181
+
+- description: Interfaces3
+  regex: .*thernet[0-9]+[,:]?(?:\x20|$)
+  color: f#00c1a181
+
+- description: Interfaces4
+  regex: \b[efgt][a-z]*[0-9]+(?:[\/.:][0-9]+)+[,:*]?(?:\x20|$)
+  color: f#00c1a181
+
+- description: Interfaces5
+  regex: [fgm][aeu][0-9]+[,:*]?(?:\x20|$)
+  color: f#00c1a181
+
+- description: Interfaces6
+  regex: (?:nvi|port-channel|Serial|Po|vfc)[0-9|\/|:|,]+[,:]?(?:\x20|$)
+  color: f#00c1a181
+
+- description: Interfaces7
+  regex: (?:multi|lo[^c]|tun|mgmt|null)[a-z]*[0-9]+,?
+  color: f#00c1a181
+
+- description: Interfaces8
+  regex: con[0-9]?|vty|line|aux|console
+  color: f#00c1a181
+
+- description: Fiber_WWN
+  regex: wwn|pwwn|(?:[a-f0-9]{2}:){7}[a-f0-9]{2}
+  color: f#00ad8eb4
+
+- description: IP,_IP:Port,_and_Subnet_Mask
+  regex: i?(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:\/[0-9]{1,2}|:[0-9]{1,5})?(?:,(?:[0-9]{1,5})?)?
+  color: f#008cbea3
+
+- description: IP,_IP:Port,_and_Subnet_Mask2
+  regex: (?:)(?:0|255)\.(?:[0-9]{1,3}\.){2}[0-9]{1,3}
+  color: f#008cbea3
+
+- description: MAC_Address1
+  regex: (?:[a-f0-9]{2}[:-]){5}[a-f0-9]{2}
+  color: f#008bcbeb
+
+- description: MAC_Address2
+  regex: [a-f0-9]{4}\.[a-f0-9]{4}\.[a-f0-9]{4}
+  color: f#008bcbeb
+
+- description: IOS_Version
+  regex: \d*\d*\.\d*\((?:\d|[a-z])*\)[^,]*|\d\d?\.\d\d?\.\d\d?\.\D\D?
+  color: f#00ad8eb4
+
+- description: Serial_Numbers
+  regex: (?:[a-z]{2}.\d{4}.{4})
+  color: f#00ad8eb4
+
+- description: Good_Words_To_See1
+  regex: (?:yes|permit|\[OK\]|on|enabled).?
+  color: f#008cbea3
+
+- description: Good_Words_To_See2
+  regex: down->up|running|.*SUCCESS.*|.*success.*|up.?(?:\x20|$)|passed.*|Complete
+  color: f#008cbea3
+
+- description: Bad_Words_To_See1
+  regex: .*_ERR:|.*fail.*|invalid|.*reload.*
+  color: f#006a61bf
+
+- description: Bad_Words_To_See2
+  regex: no|administratively|shut.*|never,?|deny|.*down.?
+  color: f#006a61bf
+
+- description: Bad_Words_To_See3
+  regex: not|initializing.?|Off|1024|768|des|des56.*
+  color: f#006a61bf
+
+- description: Bad_Words_To_See4
+  regex: telnet|half-duplex.?|\(err-disabled\)|disabled
+  color: f#006a61bf
+
+- description: Bad_Words_To_See5
+  regex: up->down|trunk|Active|inhibit
+  color: f#006a61bf
+
+- description: Misc_Words1
+  regex: (?:class|policy|service|parameter|match)(?:-map.?|-policy.?)?
+  color: f#00ad8eb4
+
+- description: Misc_Words2
+  regex: (?:version|PN|SN|S\/N|ID|PID|VID|NAME|DESCR):?
+  color: f#00ad8eb4
+
+- description: Misc_Words3
+  regex: Device|ID|Local|Intrfce|Holdtme|Capability|Platform|Port|ID
+  color: f#00ad8eb4
+
+- description: Misc_Words4
+  regex: H|Address|Interface|Hold|Uptime|SRTT|RTO|Q|Seq
+  color: f#00ad8eb4
+
+- description: Misc_Words5
+  regex: Neighbor|V|AS|MsgRcvd|MsgSent|TblVer|InQ|OutQ|Up/Down|State/Pf.*
+  color: f#00ad8eb4
+
+- description: Misc_Words6
+  regex: interface|IP-Address|Method|OK\?|Status|Protocol
+  color: f#00ad8eb4
+
+- description: Misc_Words7
+  regex: aaa|vlan\d*|description.?|MTU|BW|DLY|Vl[0-9]+
+  color: f#00ad8eb4
+
+- description: Misc_Words8
+  regex: bits\/sec,|packets\/sec
+  color: f#00ad8eb4
+
+- description: Important_Words_To_See1
+  regex: Building|configuration\.\.\.
+  color: f#006a61bf
+
+- description: Important_Words_To_See2
+  regex: erase|remove|delete.
+  color: f#006a61bf
+
+- description: Important_Words_To_See3
+  regex: \[confirm\]|\(yes/no\):.*|\[yes\/no\]:.*|.*-more-.*
+  color: f#006a61bf
+
+- description: Important_Words_To_See4
+  regex: .*-more-.*
+  color: f#006a61bf
+
+- description: Important_Words_To_See5
+  regex: username.*|password.*|key|.*-key
+  color: f#006a61bf
+
+- description: Access_Lists1
+  regex: \(hitcnt=0\)
+  color: f#00ad8eb4
+
+- description: Access_Lists2
+  regex: \(hitcnt=[1-9][0-9]*\)
+  color: f#00ad8eb4
+
+- description: Access_Lists3
+  regex: access-(?:lists?|class|group)|use-acl|prefix-list
+  color: f#00ad8eb4
+
+- description: Access_Lists4
+  regex: time-range|object-group|route-map
+  color: f#00ad8eb4
+
+- description: Progress_Bars_And_Remarked_Lines1
+  regex: remark|\*+|!+|###+|@+$
+  color: f#008bcbeb
+
+- description: Progress_Bars_And_Remarked_Lines2
+  regex: \[#+(?:\x20|$)|^\](?:\x20|$)
+  color: f#008bcbeb
+
+- description: Progress_Bars_And_Remarked_Lines3
+  regex: \[#+\]
+  color: f#008bcbeb
+
+- description: Services1
+  regex: ftp|tcp|udp|tftp|scp|ssh|ntp|snmp.*|inspect|icmp
+  color: f#008bcbeb
+
+- description: Services2
+  regex: router|eigrp|bgp|ospf|rip|gre|hsrp
+  color: f#008bcbeb
+
+- description: Services3
+  regex: Syslog_Messages
+  color: f#008bcbeb
+
+- description: Services4
+  regex: %.+-[0-9]-.+:|\b.*\.(?:bin|tar)
+  color: f#008bcbeb
