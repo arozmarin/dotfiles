@@ -91,7 +91,7 @@ CASKS=(
     dropbox
     firefox
     font-hack-nerd-font
-#    hammerspoon
+    hammerspoon
     iterm2
     karabiner-elements
     macvim
