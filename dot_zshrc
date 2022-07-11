@@ -85,10 +85,12 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
 	aliases
 	colorize
-	zsh-history-substring-search
+	colored-man-pages
+    zsh-history-substring-search
 	fzf
 	git
-	tmux
+	grc
+    tmux
 	tmux-cssh
 	zsh-autosuggestions
     zsh-syntax-highlighting
@@ -125,9 +127,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Colorized man pages
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
 # Infinite History
 HISTFILE=~/.zsh_history
 HH_CONFIG=hicolor
@@ -158,6 +157,10 @@ alias cat='bat --paging=never'
 
 # Attaches tmux to the last session; creates a new session if none exists.
 alias t='tmux attach || tmux new-session'
+
+#GRC exra alias
+alias whois="grc whois"
+alias tail="grc tail"
 
 bindkey -v
 #zsh-history-substring-search
