@@ -56,10 +56,10 @@ PACKAGES=(
     bat
     chezmoi
     fd
-    findutils
     fzf
     git
     gh
+    grc
     jq
     lsd
     midnight-commander
@@ -73,6 +73,8 @@ PACKAGES=(
     yabai
     zsh
     java
+    alacritty
+    kitty
 )
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
