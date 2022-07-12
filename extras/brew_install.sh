@@ -25,26 +25,23 @@ brew upgrade
 # Install Mas (command-line interface for Mac App Store)
 brew install mas
 
-# Search for Xcode showing only the first 5 results
-#mas search xcode | head -5
-# Install Xcode using App ID
-#mas install 497799835 # The appid for Xcode shown when doing search
+mas install 497799835 # Install Xcode
 
-#sudo xcode-select -r  # Reset the development directory path to put to Xcode /Applications/Xcode.app/Contents/Developer
+sudo xcode-select -r  # Reset the development directory path to put to Xcode /Applications/Xcode.app/Contents/Developer
 
-#sudo xcodebuild -license
+sudo xcodebuild -license
 
 # Updaate all Apple software and auto agree to any licenses and restart if necessary
-#sudo softwareupdate --install --agree-to-license -aR
+sudo softwareupdate --install --agree-to-license -aR
 
 # Install GNU core utilities (those that come with OS X are outdated)
-#brew tap homebrew/dupes
-#brew install coreutils
-#brew install gnu-sed --with-default-names
-#brew install gnu-tar --with-default-names
-#brew install gnu-indent --with-default-names
-#brew install gnu-which --with-default-names
-#brew install gnu-grep --with-default-names
+brew install coreutils
+brew install diffutils
+brew install findutils
+brew install gnu-sed
+brew install gnu-tar
+brew install gnu-indent
+brew install gnu-which
 
 # Install taps
 
