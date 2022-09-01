@@ -113,7 +113,6 @@ CASKS=(
     cyberduck
     skype
     keka
-    fluor
 )
 
 echo "Installing cask apps..."
