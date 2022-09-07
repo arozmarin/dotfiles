@@ -5,6 +5,9 @@ Run command
 sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply arozmarin
 
 
+Tmux setting 
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
+
 When install stacline
 
 
