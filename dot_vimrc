@@ -1,6 +1,6 @@
 " GIU MacVim font
 if has("gui_running")
-    set guifont=Nerd\ Hack \Font \Mono:h12
+    set guifont=Hack\ Nerd\ Font\ Mono:h12
     set linespace=2
 endif
 
