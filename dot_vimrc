@@ -1,3 +1,9 @@
+" GIU MacVim font
+if has("gui_running")
+    set guifont=Nerd\ Hack \Font \Mono:h12
+    set linespace=2
+endif
+
 " word highlighting
 syntax on
 
